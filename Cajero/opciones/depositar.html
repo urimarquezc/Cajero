@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuenta</title>
+    <link rel="stylesheet" href="../csss/style4.css">
+
+</head>
+<body>
+
+    <section class="sesion">
+        <div class="sesion__target">
+            <h1 id="saludo"></h1>
+            <form class="depo" action="">
+                <div>
+                    <h2>Saldo actual:</h2>
+                    <p id="saldo"></p>
+                </div>
+            <h2 id="Saldo">Depositar</h2>
+                <input id="deposito" class="in" type="number">
+                <input type="button" onclick="depo()" value="Confirmar" />
+                <p id="Confirmar"></p>
+            </form>
+            <div class="sesion__consults">
+                <a href="../Cajero/cajero.html" class="sesion__consult"><img src="../img/regresar.png" alt=""><p>Regresar</p></a>
+            </div>
+        </div>
+    </section>   
+
+    <script src="../caj.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../alert.js"></script>
+</body>
+</html>

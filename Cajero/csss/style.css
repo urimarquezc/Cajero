@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0 auto;
+    font-family:"montserrat", sans-serif;
+}
+
+.Sesion__target{
+    background-color: rgb(240, 240, 240);
+    width: 40%;
+    height: 400px;
+    margin-top: 170px;
+    border-radius: 20px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.ver{
+    font-size: 12px;
+}
+
+.Sesion__title{
+    padding-top: 50px;
+    padding-right: 10px;
+    text-align: center;
+    font-size:30px;
+}
+
+.Sesion__up{
+    margin-top: 40px;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.Sesion__user{
+    margin-top: 40px;
+    font-size: 12px;
+
+}
+
+.Sesion__pass{
+    padding-top: 40px;
+    font-size: 12px;
+}
+
+.Sesion__pass input{
+    padding-top: 4px;
+    margin-top: 10px;
+
+}
+
+.Sesion__user input{
+    padding-top: 4px;
+    margin-top: 10px;
+}
+
+
+.boton{
+    color:black;
+    margin-top: 40px;
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+    border: 0;
+    transition: .4s ease all;
+    border-radius: 20px;
+    background-color: grey;
+}
+
+.boton:hover{
+    background-color:coral;
+    margin-top: 40px;
+    width: 120px;
+    height: 30px;
+    font-size: 15px;
+}
+
+
+@media screen and (min-width:1335px) {
+    .Sesion__up{
+        margin-top: 40px;
+        columns: 2 1px;
+        text-align: center;
+    }
+    .Sesion__target{
+        background-color: rgb(240, 240, 240);
+        width: 26%;
+        height: 400px;
+        margin-top: 170px;
+        border-radius: 20px;
+        padding-left: 20px;
+        text-align: center;
+    }
+    .boton{
+        
+    }
+    
+}

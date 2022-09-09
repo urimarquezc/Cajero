@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+</head>
+<body>
+    <h1>Bienvenid@</h1>
+    <form>
+        <label for="Cantidad1">Cantidad1</label>
+        <input type="text" name="Cantidad1" id="C1" value="1200">
+        <label for="Cantidad2">Cantidad2</label>
+        <input type="text" name="Cantidad2" id="C2" value="800">
+    </form>
+    <h2>Transferencias</h2>
+    <input type="text" name="" id="Cant" placeholder="Cantidad">
+    <hr />
+    <input type="button" value="Transferencia de cuenta 1 a 2" id="bt2" onclick="formula1()">
+    <input type="button" value="Transferencia de cuenta 2 a 1" id="bt3" onclick="formula2()">
+    <input type="button" value="Depositar a cuenta 1" id="bt4" onclick="formula3()">
+    <input type="button" value="Depositar a cuenta 2" id="bt5" onclick="formula4()">
+    <input type="button" value="Retirar de cuenta 1" id="bt6" onclick="formula5()">
+    <input type="button" value="Retirar de cuenta 2" id="bt8" onclick="formula6()">
+    <script>
+    function formula1() {
+        let CantidadT = parseInt(document.getElementById("Cant").value);
+        let Cantidad1 = parseInt(document.getElementById("C1").value);
+        let Cantidad2 = parseInt(document.getElementById("C2").value);
+        document.getElementById("C1").value = (Cantidad1 - CantidadT);
+        document.getElementById("C2").value = (Cantidad2 + CantidadT);
+    } 
+    function formula2() {
+        let CantidadT = parseInt(document.getElementById("Cant").value);
+        let Cantidad1 = parseInt(document.getElementById("C1").value);
+        let Cantidad2 = parseInt(document.getElementById("C2").value);
+        document.getElementById("C2").value = (Cantidad2 - CantidadT);
+        document.getElementById("C1").value = (Cantidad1 + CantidadT);
+    } 
+    function formula3 () {
+        let CantidadT = parseInt(document.getElementById("Cant").value);
+        var Cantidad1 = parseInt(document.getElementById("C1").value);
+        document.getElementById("C1").value = (Cantidad1 + CantidadT);
+    }
+    function formula4 () {
+        let CantidadT = parseInt(document.getElementById("Cant").value);
+        var Cantidad2 = parseInt(document.getElementById("C2").value);
+        document.getElementById("C2").value = (Cantidad2 + CantidadT);
+    }
+    function formula5 () {
+        let CantidadT = parseInt(document.getElementById("Cant").value);
+        var Cantidad1 = parseInt(document.getElementById("C1").value);
+        document.getElementById("C1").value = (Cantidad1 - CantidadT);
+    }
+    function formula6 () {
+        let CantidadT = parseInt(document.getElementById("Cant").value);
+        var Cantidad2 = parseInt(document.getElementById("C2").value);
+        document.getElementById("C2").value = (Cantidad2 - CantidadT);
+    }
+    </script>
+</body>
+</html>
